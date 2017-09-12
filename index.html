@@ -16,10 +16,10 @@
         <div class="col">
             <nav class="nav">
                 <ul>
-                    <li><a href="#about">Home</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#news">Novidades</a></li>
-                    <li><a href="#contact-form">Contato</a></li>
+                    <li><a class="rollpage" href="#about">Home</a></li>
+                    <li><a class="rollpage" href="#products">Produtos</a></li>
+                    <li><a class="rollpage" href="#news">Novidades</a></li>
+                    <li><a class="rollpage" href="#contact-form">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -89,7 +89,7 @@
                            <span class="content">Lorem ipsum dolor sit amet,consectetur adipiscing elit, varius retrum eget ex</span>
                        </div>
                         <div class="but">
-                            <button type="button" class="btn btn-contact">CONTATO</button>
+                            <button type="button" class="btn btn-contact rollpage"><a href="#contact-form">CONTATO</a></button>
                         </div>
                 </div>
             </div>
@@ -338,18 +338,19 @@
 
             <section class="contact-form" id="contact-form">
                 <div class="to-center">
+                    <div id="notice" class="alert"></div>
                     <div class="title">
                         <h1>Contato</h1>
                     </div>
 
                     <div class="content">
-                        <form action="#">
-                            <input type="text" placeholder="NOME" name="name" id="name">
-                            <input type="email" placeholder="EMAIL" name="email" id="email">
-                            <input type="text" placeholder="ASSUNTO" name="subject" id="subject">
+                        <form action="#contact-form" id="form-cont">
+                            <input type="text" placeholder="NOME" name="name" id="name" required>
+                            <input type="email" placeholder="EMAIL" name="email" id="email" required>
+                            <input type="text" placeholder="ASSUNTO" name="subject" id="subject" required>
                             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="MENSAGEM"></textarea>
 
-                            <button disabled class="btn btn-form">ENVIAR</button>
+                            <button class="btn btn-form">ENVIAR</button>
                         </form>
                     </div>
 
@@ -367,9 +368,9 @@
             <div class="to-center">
                 <span>Todos os direitos Reservados</span>
                 <div class="social">
-                    <img src="assets/images/facebook-logo-button.png" alt="facebook">
-                    <img src="assets/images/instagram-logo.png" alt="instagram">
-                    <img src="assets/images/twitter-logo-button.png" alt="twitter">
+                    <a href="http://fb.com/lucasjcs"><img src="assets/images/facebook-logo-button.png" alt="facebook"></a>
+                    <a href="http://instagram.com/lucasjcs"><img src="assets/images/instagram-logo.png" alt="instagram"></a>
+                    <a href="http://twitter.com/lucasjcs"><img src="assets/images/twitter-logo-button.png" alt="twitter"></a>
                 </div>
             </div>
         </div>
