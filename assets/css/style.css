@@ -98,11 +98,25 @@ header{
     color: #2A3A45;
 }
 
-.about .title{
+.about .desc-bout .title{
     margin-bottom: 20px;
 }
-.about .content{
+.about .desc-bout .content{
     margin-bottom: 50px;
+}
+
+.about .desc-bout .title::before{
+    content: url("../images/detalhe_1.png");
+    display: table;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.about .desc-bout .content::after{
+    content: url("../images/detalhe_1.png");
+    display: table;
+    padding: 25px;
+    margin: 0 auto;
 }
 
 /*titulos*/
@@ -219,11 +233,16 @@ header{
     color: #F0F8ED;
 }
 
-.products .content{
+.products .desc-prod .content{
     width: 25%;
     margin: 0 auto 0 auto;
     font-size: 10pt;
     padding-bottom: 50px;
+}
+.products .desc-prod .content::after{
+    content: url("../images/detalhe_1.png");
+    display: table;
+    padding: 25px;
 }
 
 /*Galeria de Produtos*/
@@ -271,6 +290,13 @@ header{
 .news .title h1{
     color: #223843;
     padding-bottom: 50px;
+}
+
+.news .title h1::after{
+    content: url("../images/detalhe_1.png");
+    display: table;
+    padding: 25px;
+    margin: 0 auto 0 auto;
 }
 .news .title h2{
     padding-top: 50px;
@@ -324,4 +350,15 @@ header{
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 10px;
+}
+
+footer{
+    background-color: #B0BEA9;
+    padding: 50px;
+}
+
+footer span::after{
+    content: url("../images/detalhe_1.png");
+    display: table;
+    padding: 25px;
 }
